@@ -22,12 +22,13 @@ def showTabCount(tabCount):
     #graphicalRepresentation(tabCount)
 
 def elementarySchoolThing(tabCount):
+    char = "o "
     print("")
-    print("10000s :", "◼ "*(tabCount // 10000))
-    print("1000s  :", "◼ "*(tabCount // 1000 - tabCount // 10000 * 10))
-    print("100s   :", "◼ "*(tabCount // 100 - tabCount // 1000 * 10))
-    print("10s    :", "◼ "*(tabCount // 10 - tabCount // 100 * 10))
-    print("1s     :", "◼ "*(tabCount // 1 - tabCount // 10 * 10))
+    print("10000s :", char*(tabCount // 10000))
+    print("1000s  :", char*(tabCount // 1000 - tabCount // 10000 * 10))
+    print("100s   :", char*(tabCount // 100 - tabCount // 1000 * 10))
+    print("10s    :", char*(tabCount // 10 - tabCount // 100 * 10))
+    print("1s     :", char*(tabCount // 1 - tabCount // 10 * 10))
 
 """def graphicalRepresentation(tabCount):
     charactersPerLine = 50
