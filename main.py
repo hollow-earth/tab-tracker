@@ -62,6 +62,7 @@ def OnTabRelease(key):
         tabCount += 1
         showTabCount(tabCount)
 
+showTabCount(tabCount)
 while True:
     with keyboard.Listener(on_press=OnTabPress, on_release=OnTabRelease) as listener:
         listener.join()
